@@ -2,5 +2,6 @@
 # The logic to start up your application should be put in this
 # script. The application will work only if it binds to
 # $OPENSHIFT_INTERNAL_IP:8080
+sed -i -e 's/<Property name=\"jetty.host\"\/>/<Property name=\"jetty.host\">'$OPENSHIFT_INTERNAL_IP'<\/Property>/g' $OPENSHIFT_REPO_DIR/diy/virgo/jetty/etc/jetty.xml
 export JAVA_HOME=/usr/lib/jvm/java-1.7.0
 nohup $OPENSHIFT_REPO_DIR/diy/virgo/bin/startup.sh > $OPENSHIFT_REPO_DIR/start.log

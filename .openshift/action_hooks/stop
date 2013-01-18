@@ -1,4 +1,5 @@
 #!/bin/bash
 # The logic to stop your application should be put in this script.
-export JAVA_HOME=/usr/lib/jvm/java-1.7.0
-$OPENSHIFT_REPO_DIR/diy/virgo/bin/shutdown.sh
+killall -2 java
+sleep 5
+killall -9 java
