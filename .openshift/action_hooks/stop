@@ -1,6 +1,6 @@
 #!/bin/bash
 # The logic to stop your application should be put in this script.
-killall -2 java
+killall java
 sleep 5
 killall -9 java
 exit 0
