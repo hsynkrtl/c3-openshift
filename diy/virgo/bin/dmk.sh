@@ -195,6 +195,8 @@ then
 			-Djava.security.auth.login.config=$AUTH_LOGIN \
 			-Dorg.eclipse.virgo.kernel.authentication.file=$AUTH_FILE \
 			-Djetty.home=$JETTY_HOME \
+			-Djetty.home=$OPENSHIFT_INTERNAL_IP \
+			-Djetty.port=$OPENSHIFT_INTERNAL_PORT \
        		-Djava.io.tmpdir=$OPENSHIFT_TMP_DIR \
 			-Dorg.eclipse.virgo.kernel.home=$KERNEL_HOME \
 			-Dorg.eclipse.virgo.kernel.config=$CONFIG_DIR \
