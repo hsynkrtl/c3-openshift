@@ -3,4 +3,4 @@
 # script. The application will work only if it binds to
 # $OPENSHIFT_INTERNAL_IP:8080
 export JAVA_HOME=/usr/lib/jvm/java-1.7.0
-$OPENSHIFT_REPO_DIR/diy/virgo/bin/startup.sh
+nohup $OPENSHIFT_REPO_DIR/diy/virgo/bin/startup.sh > $OPENSHIFT_REPO_DIR/start.log

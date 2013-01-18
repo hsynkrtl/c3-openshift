@@ -187,6 +187,7 @@ then
 			-Xmx1024m \
 			-XX:MaxPermSize=128m \
 			$DEBUG_OPTS \
+			$JMX_OPTS \
 			-XX:+HeapDumpOnOutOfMemoryError \
 			-XX:ErrorFile=$KERNEL_HOME/serviceability/error.log \
 			-XX:HeapDumpPath=$KERNEL_HOME/serviceability/heap_dump.hprof \
