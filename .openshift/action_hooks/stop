@@ -3,3 +3,4 @@
 killall -2 java
 sleep 5
 killall -9 java
+exit 0
